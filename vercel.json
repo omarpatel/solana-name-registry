@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd web && npm install && npm run build",
+  "outputDirectory": "web/dist",
+  "installCommand": "echo 'skip'",
+  "rewrites": [
+    { "source": "/@:username", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
